@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Phase Shift by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>股票查詢結果</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/jquery.dropotron.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/skel.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/skel-layers.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/init.js')}}"></script>
+
+	<link rel='stylesheet' type="text/css" href="{{ url_for('static',filename='css/skel.css')}}">
+	<link rel='stylesheet' type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+	<link rel='stylesheet' type="text/css" href="{{ url_for('static',filename='css/style-wide.css')}}">
+
+
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<script>
+		//創造函式
+		//過去
+		//創造函式
+		function nextImg3(a){
+		//步驟2：獲取頁面元素
+		var next = document.getElementById("html");
+		//步驟3：更改元素的src屬性
+		next.src = a;
+		//要顯示的檔名
+		}
+		
+		</script>
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper style1">
+
+		<!-- Header -->
+		<div id="header" class="skel-panels-fixed">
+			<div id="logo">
+				<h1><a href="{{url_for('index')}}">STOCK</a></h1>
+				<span class="tag">THE COLLECTOR</span>
+			</div>
+		</div>
+
+		<!-- Page -->
+		<div id="page" class="container">
+			<section>
+				<header class="major">
+					<h1>{{a}}</h1>
+					<h2>{{no}}</h2>
+					<span class="byline"></span>
+				</header>
+				<p>
+					<div>
+						{% for number in  lin_k %}
+						
+						<h2>{{number}}</h2>
+						<h3>{{lin_k[number]}}</h3>
+						{% endfor %}
+						<table class="catelog" border="1" cellpadding="0" cellspacing="0" align="center">
+							<tbody>
+								<tr>
+									<td><iframe src="{{ url_for('static',filename='images/pic05.jpg')}}" id="html"
+											width=1000 height=666 frameborder=0 scrolling=auto></iframe></a></td>
+								</tr>
+								<table class="catelog" border="1" cellpadding="0" cellspacing="0" align="Left"></table>
+
+						</table>
+			</section>
+		</div>
+		<!-- /Page -->
+
+		<!-- Main -->
+		<!--	<div id="main">   -->
+		<div class="container">
+			<div class="row">
+
+				<!-- Content -->
+				<!--				<div class="6u">
+									<section>
+										<ul class="style">
+											<li class="fa fa-wrench">
+												<h3>Integer ultrices</h3>
+												<span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>
+											<li class="fa fa-leaf">
+												<h3>Aliquam luctus</h3>
+												<span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>
+										</ul>
+									</section>
+								</div>
+								<div class="6u">
+									<section>
+										<ul class="style">
+											<li class="fa fa-cogs">
+												<h3>Integer ultrices</h3>
+												<span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>
+											<li class="fa fa-road">
+												<h3>Aliquam luctus</h3>
+												<span>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Maecenas condimentum enim tincidunt risus accumsan.</span> </li>
+										</ul>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				<!-- /Main -->
+
+			</div>
+
+
+
+			<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				<div class="copyright">
+					<p>Design by TEAM3</p>
+					<ul class="icons">
+						<li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+						<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
