@@ -8,12 +8,11 @@ import pandas as pd
 conn = MongoClient('localhost', 27017)
 db = conn['rent_591']
 collection = db.rent
-
+rows = collection.find()
 
 #搜尋
 def search_enumera_region(sex):
-    OJID_ls=[]
-    rows = collection.find()   
+    OJID_ls=[]   
     for index, items in enumerate(rows):
             if items['sex'] == f'{sex}':
                 a = str(input("繼續選地區嗎?Y/N"))

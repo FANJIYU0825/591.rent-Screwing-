@@ -6,20 +6,22 @@ import json
 '''
 租屋物件資料擷取
 '''
-# conn = MongoClient('localhost', 27017)
-# db = conn['rent_591']
-# collection = db.rent
+# 資料庫設定
+conn = MongoClient('localhost', 27017)
+db = conn['rent_591']
+collection = db.rent
+rows = collection.find()
 
 
-# def search_enumera_region_filter(region,regg):
-#      OJID_ls=[]
-#      rows = collection.find()   
-#      for index, items in enumerate(rows):
+def search_enumera_region_filter(region,regg):
+     OJID_ls=[]
+        
+     for index, items in enumerate(rows):
          
-#          if items[f'{region}'] == regg:
-#              OJID=items['_id']
-#              OJID_ls.append(OJID)
-#      return OJID_ls
+         if items[f'{region}'] == regg:
+             OJID=items['_id']
+             OJID_ls.append(OJID)
+     return OJID_ls
 
             
 # def search_enumera_reuslt(a):
@@ -155,9 +157,9 @@ import json
 #           r_males =search_enumera_reuslt_json(re_males)
 #      # r_males.to_csv('filte_males.csv',index=False ,mode='a+')
 
-          json_string = json.dumps(r_males,ensure_ascii=False)
-          print(json_string, file=j_file)
-          print(json_string)
+        #   json_string = json.dumps(r_males,ensure_ascii=False)
+        #   print(json_string, file=j_file)
+        #   print(json_string)
      
           
           # print(a)
