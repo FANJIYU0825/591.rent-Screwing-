@@ -1,5 +1,8 @@
-way,DAY1,DAY2,DAY3,DAY4,DAY5,DAY6,DAY7
-listen music,60,60,60,60,60,60,60
-Playing  games,40,40,40,40,40,40,40
-Watching TV,36,36,36,36,36,36,36
-Watching films,30,30,30,30,30,30,30
+EFFECT,listen music,Playing games,Watching TV,Watching films
+Day1,40,30,20,20
+Day2,40,40,40,60
+Day3,40,50,60,100
+Day4,40,60,80,140
+Day5,50,70,100,180
+Day6,50,80,120,220
+Day7,50,90,140,260
